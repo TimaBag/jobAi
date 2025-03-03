@@ -1,23 +1,18 @@
-import { Button, Container, Typography } from '@mui/material'
-import { useState } from 'react'
+import React from 'react'
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
+import AuthPage from './pages/auth.page'
+import CompanyPage from './pages/company.page'
+import TalentPage from './pages/talent.page'
 
 function App() {
-	const [count, setCount] = useState(0)
-
 	return (
-		<Container sx={{ textAlign: 'center', mt: 5 }}>
-			<Typography variant='h3' gutterBottom>
-				Welcome to MUI + React + Vite!
-			</Typography>
-			<Typography variant='h5'>Counter: {count}</Typography>
-			<Button
-				variant='contained'
-				color='primary'
-				onClick={() => setCount(count + 1)}
-			>
-				Increase
-			</Button>
-		</Container>
+		<Router>
+			<Routes>
+				<Route path='/login' element={<AuthPage />} />
+				<Route path='/company' element={<CompanyPage />} />
+				<Route path='/talent' element={<TalentPage />} />
+			</Routes>
+		</Router>
 	)
 }
 
