@@ -1,6 +1,6 @@
 import { Auth0Provider } from '@auth0/auth0-react'
 import React from 'react'
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
+import { Route, HashRouter as Router, Routes } from 'react-router-dom'
 import Sidebar from './components/sidebar.component'
 import AuthPage from './pages/auth.page'
 import CandidateSignUp from './pages/candidate-signup.page'
