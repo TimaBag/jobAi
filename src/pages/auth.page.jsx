@@ -25,6 +25,7 @@ export default function AuthPage() {
 				justifyContent: 'center',
 				alignItems: 'center',
 				height: '100vh',
+				width: '100%',
 			}}
 		>
 			<Paper
