@@ -31,7 +31,7 @@ export default function JobListPage() {
 				<Box textAlign='center' mt={4}>
 					<Typography variant='h6'>You have not created a job yet.</Typography>
 					<Typography variant='body2'>
-						Please create a job by clicking the button above.
+						Please create a job bys clicking the button above.
 					</Typography>
 				</Box>
 			) : (

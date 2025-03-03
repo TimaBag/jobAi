@@ -3,5 +3,12 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
 	plugins: [react()],
-	base: '/jobai/', // 👈 Add this line
+	preview: {
+		port: 8080, // Use Railway's assigned port
+		host: '0.0.0.0',
+	},
+	server: {
+		port: 8080,
+		host: '0.0.0.0',
+	},
 })
